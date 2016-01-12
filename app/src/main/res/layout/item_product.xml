@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/cv">
+
+        <RelativeLayout
+            android:id="@+id/rlCardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/card_bg">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imgIcon"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgAddCart"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_action_new"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductTitle"
+                android:layout_toRightOf="@+id/imgIcon"
+                android:layout_toLeftOf="@+id/imgAddCart"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                android:textColor="@color/title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductPrice"
+                android:layout_toRightOf="@+id/imgIcon"
+                android:layout_toLeftOf="@+id/imgAddCart"
+                android:layout_below="@+id/tvProductTitle"
+                android:textColor="@color/title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductAvailability"
+                android:layout_toRightOf="@+id/imgIcon"
+                android:layout_toLeftOf="@+id/imgAddCart"
+                android:layout_below="@+id/tvProductPrice"
+                android:textColor="@color/title" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

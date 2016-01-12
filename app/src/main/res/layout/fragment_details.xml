@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:clickable="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/fragment_details_bg">
+
+            <ScrollView
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cv"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgIcon"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_marginTop="40dp"/>
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="30dp"
+                            android:textColor="@color/card_txt" />
+
+                        <TextView
+                            android:id="@+id/tvPriceLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTitle"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/lblPrice"/>
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTitle"
+                            android:layout_toRightOf="@+id/tvPriceLabel"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tvPaidLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPrice"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/lblPaid"/>
+
+                        <TextView
+                            android:id="@+id/tvPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPrice"
+                            android:layout_toRightOf="@+id/tvPaidLabel"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvAvailabilityLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPaid"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/lblAvailability"/>
+
+                        <TextView
+                            android:id="@+id/tvAvailability"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPaid"
+                            android:layout_toRightOf="@+id/tvAvailabilityLabel"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="0dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/imgIcon"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnCurrency1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/currency_1"
+                                    android:onClick="makePayment"/>
+
+                                <Button
+                                    android:id="@+id/btnCurrency2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/currency_2"
+                                    android:onClick="makePayment"/>
+
+                                <Button
+                                    android:id="@+id/btnCurrency3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/currency_3"
+                                    android:onClick="makePayment"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnCurrency4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/currency_4"
+                                    android:onClick="makePayment"/>
+
+                                <Button
+                                    android:id="@+id/btnCurrency5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/currency_5"
+                                    android:onClick="makePayment"/>
+
+                                <Button
+                                    android:id="@+id/btnCurrency6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/currency_6"
+                                    android:onClick="makePayment"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp">
+
+                                <Button
+                                    android:id="@+id/btnCancel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/lblCancel"
+                                    android:background="@color/red"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="3dp"/>
+
+                                <Button
+                                    android:id="@+id/btnConfirm"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/lblPay"
+                                    android:background="@color/actiobar_bg"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="3dp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

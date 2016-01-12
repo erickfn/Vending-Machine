@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Vending Machine</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Messages -->
+    <string name="select_product">Select your product...</string>
+    <string name="msg_connection">Verify your connection!</string>
+    <string name="no_service">Service unavailable!</string>
+    <string name="data_error">Data error, contact the developer!</string>
+    <string name="no_data">No data by the moment!</string>
+    <string name="lblPrice">Price: $</string>
+    <string name="lblPaid">Paid: $</string>
+    <string name="lblAvailability">Available:</string>
+    <string name="priceReached">Price already reached!</string>
+    <string name="purchaseCanceled">You have canceled your purchase!</string>
+    <string name="purchaseConfirmed">Enjoy your product!</string>
+    <string name="priceNotReached">You have not reached the price!</string>
+    <string name="missingMoney">Missing money:</string>
+    <string name="moneyBack">Your money back is:</string>
+    <string name="lblPay">Confirm</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="dialog_title">Take your money!</string>
+    <string name="dialog_done">Done</string>
+    <string name="productUnavailable">Product Unavailable!</string>
+
+    <!-- Services -->
+    <string name="service_dummy">//dummy</string>
+    <string name="service_products">http://testweb.com.mx/vendormachine/service.php</string>
+
+    <!-- Colors -->
+    <color name="fragment_bg">#e0e0e0</color>
+    <color name="fragment_details_bg">#e0e0e0</color>
+    <color name="card_bg">#ffffff</color>
+    <color name="card_txt">#757575</color>
+    <color name="actiobar_bg">#0fc6dc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="title">#757575</color>
+    <color name="red">#FF0000</color>
+
+    <!-- Currencies -->
+    <string name="currency_1">1¢</string>
+    <string name="currency_2">5¢</string>
+    <string name="currency_3">10¢</string>
+    <string name="currency_4">25¢</string>
+    <string name="currency_5">$1</string>
+    <string name="currency_6">$5</string>
+</resources>
